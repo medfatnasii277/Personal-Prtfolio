@@ -36,7 +36,7 @@ export default function SkillsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-black border border-gray-700 p-6 rounded-none hover:border-green-400 transition-all duration-300"
+              className="bg-black border border-gray-700 p-6 rounded-lg shadow-md hover:border-green-400 hover:shadow-green-500/50 transition-all duration-300"
             >
               <div className="flex flex-col items-center text-center">
                 <skill.icon className={`w-8 h-8 ${skill.color} mb-3`} />

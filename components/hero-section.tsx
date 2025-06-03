@@ -67,26 +67,6 @@ export function HeroSection() {
             transition={{ duration: 1 }}
             className="text-left"
           >
-            <div className="mb-8">
-              <div className="relative inline-block">
-                <motion.div
-                  animate={{
-                    boxShadow: [
-                      "0 0 20px rgba(34, 197, 94, 0.5)",
-                      "0 0 40px rgba(34, 197, 94, 0.3)",
-                      "0 0 20px rgba(34, 197, 94, 0.5)",
-                    ],
-                  }}
-                  transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY }}
-                  className="absolute -inset-1 rounded-full opacity-70"
-                />
-                <Avatar className="w-32 h-32 border-2 border-green-500 shadow-lg shadow-green-500/30 relative">
-                  <AvatarImage src="/placeholder.svg?height=128&width=128" alt="Software Engineer" />
-                  <AvatarFallback className="bg-black text-green-400 text-4xl font-mono">{"</>"}</AvatarFallback>
-                </Avatar>
-              </div>
-            </div>
-
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -119,14 +99,6 @@ export function HeroSection() {
               transition={{ duration: 1, delay: 0.6 }}
               className="flex flex-col sm:flex-row gap-4 mb-8"
             >
-              <Button
-                onClick={downloadResume}
-                className="bg-green-600 hover:bg-green-700 text-black font-mono font-bold px-6 py-3 rounded-none border-2 border-green-400 shadow-lg shadow-green-500/30 hover:shadow-green-500/50 transition-all duration-300 group"
-              >
-                <Download className="w-5 h-5 mr-2 group-hover:animate-bounce" />
-                ./download-resume.sh
-              </Button>
-
               <Button
                 variant="outline"
                 className="border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black px-6 py-3 rounded-none font-mono transition-all duration-300 group"
@@ -165,14 +137,6 @@ export function HeroSection() {
                   <span className="sr-only">LinkedIn</span>
                 </Button>
               </Link>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="rounded-none w-12 h-12 bg-gray-800 hover:bg-gray-700 hover:text-yellow-400 transition-all duration-300 font-mono"
-                title="Powered by caffeine"
-              >
-                <Coffee className="w-6 h-6" />
-              </Button>
             </motion.div>
           </motion.div>
 
