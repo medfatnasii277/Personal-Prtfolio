@@ -47,6 +47,26 @@ const projects = [
     ],
     github: "https://github.com/medfatnasii277/Student-Wallet-Backend",
     live: undefined,
+  },
+  {
+    title: "Professional Resume Builder",
+    description: "A modern, responsive web application for generating professional resumes with customizable themes and real-time preview functionality.",
+    image: "/resumebuilder.jpg",
+    status: "2024",
+    tech: ["Next.js", "React", "HTML5", "CSS3", "JavaScript"],
+    stars: "",
+    forks: "",
+    funFact: "// Making resume creation as easy as filling out a form",
+    details: "Built a modern, responsive web application for generating professional resumes with customizable themes and real-time preview functionality. The project allows users to input their personal information, experience, education, and skills, and instantly see a live preview of their resume with the selected design theme. Users can also export the final resume as a downloadable PDF. Focused on clean UI/UX and component-driven architecture using Next.js for server-side rendering and performance optimization.",
+    features: [
+      "Multi-step form with tabs: Personal Info, Experience, Education, Skills, Theme",
+      "Live resume preview with dynamic data binding",
+      "Theme customization options for layout and design",
+      "Export to PDF functionality",
+      "Responsive design for desktop and mobile"
+    ],
+    github: undefined,
+    live: undefined,
   }
 ]
 
