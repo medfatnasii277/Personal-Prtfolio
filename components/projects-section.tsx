@@ -65,8 +65,8 @@ const projects = [
       "Export to PDF functionality",
       "Responsive design for desktop and mobile"
     ],
-    github: undefined,
-    live: undefined,
+    github: "https://github.com/medfatnasii277/Resumer-builder",
+    live: "https://resumer-builder-eta.vercel.app/",
   }
 ]
 
