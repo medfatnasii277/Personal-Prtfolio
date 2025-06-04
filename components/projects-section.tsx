@@ -27,6 +27,26 @@ const projects = [
     ],
     github: "https://github.com/medfatnasii277/Moodly-AI-Powered-Mental-Health-Companion",
     live: "https://moodly-ai-powered-mental-health-com.vercel.app/?nocache=1748982603328"
+  },
+  {
+    title: "StudentVault — Secure Document Management System for Students",
+    description: "A full-stack document management application with secure authentication and user management.",
+    image: "/studentwallet.jpg",
+    status: "2024",
+    tech: ["Spring Boot", "Spring Security", "React", "JWT", "Hibernate", "MySQL"],
+    stars: "",
+    forks: "",
+    funFact: "// Making document management secure and accessible for students",
+    details: "A secure document management space for students, featuring a secured REST API with Spring Boot, user management with JWT, and a MySQL database. The frontend is developed with React.",
+    features: [
+      "Secure REST API with Spring Boot, user management with JWT, and MySQL database",
+      "Modern React frontend with responsive design and intuitive interface",
+      "Robust authentication and authorization system using Spring Security",
+      "Efficient document storage and retrieval system",
+      "User-friendly dashboard for document management"
+    ],
+    github: "https://github.com/medfatnasii277/Student-Wallet-Backend",
+    live: undefined,
   }
 ]
 
