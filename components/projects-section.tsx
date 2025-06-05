@@ -67,26 +67,6 @@ const projects = [
     ],
     github: "https://github.com/medfatnasii277/Resumer-builder",
     live: "https://resumer-builder-eta.vercel.app/",
-  },
-  {
-    title: "Fleet Management System",
-    description: "A comprehensive fleet tracking and management backend system with real-time vehicle monitoring and analytics.",
-    image: "/fleet-management.jpg",
-    status: "2024",
-    tech: ["Node.js", "Express.js", "MongoDB", "Socket.IO", "JWT"],
-    stars: "",
-    forks: "",
-    funFact: "// Making fleet management smarter and more efficient",
-    details: "A robust backend system for fleet tracking and management, featuring real-time vehicle monitoring, driver management, and comprehensive analytics. Built with Node.js and Express.js, it provides a secure and scalable solution for fleet operations.",
-    features: [
-      "Real-time vehicle tracking and monitoring",
-      "Driver management and performance analytics",
-      "Secure authentication with JWT",
-      "Real-time notifications using Socket.IO",
-      "Comprehensive API documentation"
-    ],
-    github: "https://github.com/medfatnasii277/Fleet-Tracking-Backend",
-    live: undefined,
   }
 ]
 

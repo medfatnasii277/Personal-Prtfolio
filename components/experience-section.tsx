@@ -17,6 +17,7 @@ const experiences = [
       "Designed Angular UI with NgRx for real-time route visualization",
       "Integrated geolocation using Socket.io for live GPS tracking",
     ],
+    github: "https://github.com/medfatnasii277/Fleet-Tracking-Backend"
   },
 ]
 
@@ -105,6 +106,21 @@ export function ExperienceSection() {
                       ))}
                     </div>
                   </div>
+
+                  {/* GitHub Link */}
+                  {exp.github && (
+                    <div className="mt-4">
+                      <a
+                        href={exp.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center text-sm text-gray-400 hover:text-green-400 transition-colors duration-300"
+                      >
+                        <GitBranch className="w-4 h-4 mr-2" />
+                        View on GitHub
+                      </a>
+                    </div>
+                  )}
                 </CardContent>
               </Card>
             </motion.div>
