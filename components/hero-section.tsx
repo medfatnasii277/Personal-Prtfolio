@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Download, Github, Linkedin, Terminal, Coffee } from "lucide-react"
+import { Download, Github, Linkedin, Terminal, Coffee, Trophy } from "lucide-react"
 import Link from "next/link"
 import { useState, useEffect } from "react"
 
@@ -99,16 +99,27 @@ export function HeroSection() {
               transition={{ duration: 1, delay: 0.6 }}
               className="flex flex-col sm:flex-row gap-4 mb-8"
             >
-              <Button
-                variant="outline"
-                className="border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black px-6 py-3 rounded-none font-mono transition-all duration-300 group"
-                onClick={() => {
-                  document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
-                }}
-              >
-                <Terminal className="w-5 h-5 mr-2" />
-                cd ./projects
-              </Button>
+              <div className="flex gap-4 mt-8">
+                <Button
+                  asChild
+                  className="bg-green-600 hover:bg-green-700 text-black font-mono"
+                >
+                  <a href="#projects">
+                    <Terminal className="w-4 h-4 mr-2" />
+                    cd /projects
+                  </a>
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  className="border-green-400 text-green-400 hover:bg-green-400 hover:text-black transition-all duration-300 font-mono"
+                >
+                  <a href="/achievements">
+                    <Trophy className="w-4 h-4 mr-2" />
+                    cd /achievements
+                  </a>
+                </Button>
+              </div>
             </motion.div>
 
             <motion.div

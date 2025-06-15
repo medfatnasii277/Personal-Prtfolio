@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
-import { ExternalLink, Github, Code, Star, GitFork, Eye } from "lucide-react"
+import { ExternalLink, Github, Code, Star, GitFork, Eye, Trophy } from "lucide-react"
 import Image from "next/image"
 
 const projects = [
