@@ -12,7 +12,6 @@ const achievements = [
     title: "2Fast DSA Competition",
     description: "2nd place in competitive programming and Data Structures & Algorithms competition.",
     icon: Trophy,
-    date: "2024",
     category: "Competition",
     color: "text-yellow-400",
     image: "/2fast.jpg",
@@ -22,7 +21,6 @@ const achievements = [
     title: "CyberBenders AI & CTF",
     description: "1st place in AI and Cybersecurity Capture The Flag competition.",
     icon: Medal,
-    date: "2024",
     category: "Cybersecurity",
     color: "text-blue-400",
     image: "/cyberbenders.jpg",
@@ -32,7 +30,6 @@ const achievements = [
     title: "Coding Moon",
     description: "1st place in overnight hackathon for developing a full-stack educational application.",
     icon: Star,
-    date: "2024",
     category: "Hackathon",
     color: "text-purple-400",
     image: "/coodingMoon.jpg",
@@ -42,7 +39,6 @@ const achievements = [
     title: "Survival Challenge",
     description: "1st place in multi-domain competition combining web development, AI, and cybersecurity.",
     icon: Target,
-    date: "2024",
     category: "Multi-Domain",
     color: "text-red-400",
     image: "/survivalChallenge.jpg",
@@ -52,7 +48,6 @@ const achievements = [
     title: "Digital Minds",
     description: "1st place in hackathon for developing a full-stack solution addressing IT waste management.",
     icon: Award,
-    date: "2024",
     category: "Sustainability",
     color: "text-cyan-400",
     image: "/digitalMinds.jpg",
@@ -62,7 +57,6 @@ const achievements = [
     title: "Nuit d'info 2024",
     description: "Silver medal in GreenIT challenge focusing on SEO, Lighthouse, and environmental impact optimization.",
     icon: Medal,
-    date: "2024",
     category: "Green IT",
     color: "text-green-400",
     image: "/green.jpg",
@@ -125,7 +119,6 @@ export default function AchievementsPage() {
                   )}
                   <div className="flex items-center justify-between mb-4">
                     <achievement.icon className={`w-8 h-8 ${achievement.color}`} />
-                    <span className="text-sm text-gray-400 font-mono">{achievement.date}</span>
                   </div>
                   
                   <h3 className="text-xl font-bold text-white mb-2 font-mono">{achievement.title}</h3>
