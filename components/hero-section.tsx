@@ -6,6 +6,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Download, Github, Linkedin, Terminal, Coffee, Trophy } from "lucide-react"
 import Link from "next/link"
 import { useState, useEffect } from "react"
+import { TerminalGame } from "@/components/terminal-game"
 
 export function HeroSection() {
   const [displayText, setDisplayText] = useState("")
@@ -202,6 +203,9 @@ export function HeroSection() {
           </motion.div>
         </motion.div>
       </div>
+
+      {/* Terminal Game Component */}
+      <TerminalGame />
     </section>
   )
 }
