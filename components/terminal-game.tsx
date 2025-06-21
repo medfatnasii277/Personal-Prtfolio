@@ -319,14 +319,6 @@ export function TerminalGame() {
                   <Button
                     variant="ghost"
                     size="sm"
-                    onClick={() => setIsMinimized(!isMinimized)}
-                    className="text-green-400 hover:text-green-300"
-                  >
-                    {isMinimized ? <Maximize2 className="w-4 h-4" /> : <Minimize2 className="w-4 h-4" />}
-                  </Button>
-                  <Button
-                    variant="ghost"
-                    size="sm"
                     onClick={() => setIsOpen(false)}
                     className="text-red-400 hover:text-red-300"
                   >
