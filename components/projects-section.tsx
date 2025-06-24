@@ -9,6 +9,44 @@ import Image from "next/image"
 
 const projects = [
   {
+    title: "Microservices‑Based Patient Management System",
+    description: "A modular patient management platform using Java 21, Spring Boot, gRPC, Kafka, PostgreSQL, JWT, Docker, and AWS tools.",
+    image: "/patientMangement.jpg",
+    status: "2025",
+    tech: [
+      "Java 21",
+      "Spring Boot",
+      "Spring Cloud Gateway",
+      "gRPC",
+      "Apache Kafka",
+      "Protobuf",
+      "PostgreSQL",
+      "H2",
+      "JWT",
+      "Docker",
+      "Docker Compose",
+      "LocalStack",
+      "AWS CloudFormation",
+      "JUnit",
+      "Mockito"
+    ],
+    stars: "",
+    forks: "",
+    funFact: "// Real-world microservices, event-driven, and cloud-native patterns",
+    details: "Microservices architecture with modular services (Patient, Billing, Analytics, Auth) using Spring Boot, containerized with Docker Compose. gRPC for inter-service calls, Kafka (Protobuf) for event streaming, PostgreSQL/H2 for persistence, JWT auth, and AWS-style local/cloud deployment.",
+    features: [
+      "Microservices: Patient, Billing, Analytics, Auth—each in its own container",
+      "gRPC for efficient inter-service communication (Protobuf)",
+      "Kafka event streaming for async integration (Protobuf messages)",
+      "Spring Cloud Gateway for API routing and JWT security",
+      "PostgreSQL (prod) & H2 (dev/test) with SQL migrations",
+      "Docker Compose for local orchestration; LocalStack & CloudFormation for AWS infra",
+      "Comprehensive testing with JUnit & Mockito"
+    ],
+    github: "",
+    live: ""
+  },
+  {
     title: "Moodly – AI-Powered Wellness Web App",
     description: "A full-stack wellness application featuring an empathetic AI chatbot and interactive wellness resources.",
     image: "/moodly-preview.jpg",
@@ -104,19 +142,6 @@ export function ProjectsSection() {
                     height={300}
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-
-                  {/* Status Badge */}
-                  <div className="absolute top-4 right-4">
-                    <span
-                      className={`px-2 py-1 text-xs font-mono border ${
-                        project.status === "Production"
-                          ? "bg-green-600 text-black border-green-400"
-                          : "bg-yellow-600 text-black border-yellow-400"
-                      }`}
-                    >
-                      {project.status}
-                    </span>
-                  </div>
 
                   {/* Code Icon */}
                   <div className="absolute top-4 left-4">
