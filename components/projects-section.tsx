@@ -43,7 +43,7 @@ const projects = [
       "Docker Compose for local orchestration; LocalStack & CloudFormation for AWS infra",
       "Comprehensive testing with JUnit & Mockito"
     ],
-    github: "",
+    github: "https://github.com/medfatnasii277/Patient-Mangement-System",
     live: ""
   },
   {
